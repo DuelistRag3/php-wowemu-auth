@@ -11,7 +11,7 @@
 You can install the libary via composer:
 
 ``` bash
-composer require laizerox/php-wowemu-auth
+composer require duelistrag3/php-wowemu-auth
 ```
 
 ## Usage
@@ -22,7 +22,7 @@ First you'll want to use Composer's `autoloader`. Place this at the top of your 
 
 ``` php
 require_once __DIR__ . '/vendor/autoload.php';
-use Laizerox\Wowemu\SRP\UserClient;
+use Duelistrag3\Wowemu\SRP\UserClient;
 ```
 
 Next you'll need to create the verifier and salt values using the username and password which your user submitted on your registration form.
@@ -41,7 +41,7 @@ First you'll want to use Composer's `autoloader`. Place this at the top of your 
 
 ``` php
 require_once __DIR__ . '/vendor/autoload.php';
-use Laizerox\Wowemu\SRP\UserClient;
+use Duelistrag3\Wowemu\SRP\UserClient;
 ```
 
 Next you'll need to generate your "verifier". Think of this as the hashed version of the password your user put into the password field of you login form.
@@ -65,7 +65,7 @@ This example goes over how a user can register via a web form.
 /* register.php */
 
 require_once __DIR__ . '/vendor/autoload.php';
-use Laizerox\Wowemu\SRP\UserClient;
+use Duelistrag3\Wowemu\SRP\UserClient;
 
 /* Connect to your CMaNGOS database. */
 $db = new mysqli($dbHost, $dbUser, $dbPassword, $dbName);
@@ -124,7 +124,7 @@ The above is a very basic HTML form for user registrations.
 /* login.php */
 
 require_once __DIR__ . '/vendor/autoload.php';
-use Laizerox\Wowemu\SRP\UserClient;
+use Duelistrag3\Wowemu\SRP\UserClient;
 
 /* Connect to your CMaNGOS database. */
 $db = new mysqli($dbHost, $dbUser, $dbPassword, $dbName);
